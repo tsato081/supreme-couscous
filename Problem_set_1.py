@@ -9,10 +9,10 @@ def evens_and_odds (n: int) -> dict:
     """_summary_
     
     Args:
-        n (int): _description_
+        n (int): natural numbers
 
     Returns:
-        dict: _description_
+        dict: returns a dictionary consisting of evens, which is a sum of all even numbers less than n and odds, which is a sum of all odd numbers less than n
         
     """
     evens = 0
@@ -34,12 +34,12 @@ def time_diff(date_1: str, date_2: str, out: str) -> Union[str,float]:
     """
 
     Args:
-        date_1 (str): _description_
-        date_2 (str): _description_
-        out (str): _description_
+        date_1 (str): YYYY-MM-DD
+        date_2 (str): YYYY-MM-DD
+        out (str): string or float
 
     Returns:
-        Union[str,float]: _description_
+        Union[str,float]: if out is float it returns difference in the number of days, and if out is str it returns "There are {diff} days between the two dates"
     """
     date1 = datetime.strptime(date_1, "%Y-%M-%D")
     date2 = datetime.strptime(date_2, "%Y-%M-%D")
